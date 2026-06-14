@@ -1,6 +1,6 @@
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        nums.sort()  # ✅ Sort first!
+        nums.sort()
         result = []
 
         for i in range(len(nums) - 2):
@@ -25,8 +25,8 @@ class Solution:
                     k -= 1
 
                 elif total < 0:
-                    j += 1  # ✅ Need bigger sum!
+                    j += 1
                 else:
-                    k -= 1  # ✅ Need smaller sum!
+                    k -= 1
 
         return result
